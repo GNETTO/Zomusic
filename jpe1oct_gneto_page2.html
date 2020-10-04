@@ -1,0 +1,331 @@
+<html>
+<head>
+    <style>
+        div {border:1p solid red ;}
+        #header {
+            display: flex;
+            justify-content: space-between;background-color: ;
+        }
+        .container { width: 80%;
+ padding-right: 15px;
+  padding-left: 15px;
+ margin-right: auto;
+  margin-left: auto;}
+        .list-inline{ margin-bottom: 20px; }
+        .list-inline li{ display: inline-block;padding: 10px;}
+        .list-inline li:hover {opacity: 0.6;cursor: pointer}
+        #rightpart {text-align: right}
+        #search { border-radius: 10px;padding-left: 30px;background-color: rgba(192,192,192,0.2); outline: none; width:190px; height:30px; color: ;}
+        #search-block { position: relative;}
+        #search-icon { position: absolute; left: 6px;top:2px}
+        .list-inline:nth-child(2) li a {
+            background-color:ghostwhite; cursor: pointer ;opacity: 0.7
+        }
+        .list-inline:nth-child(2) li a:hover {
+           opacity: 1 ; background-color: rgba(192,192,192,0.2) ; color: whit
+        }
+        .list-inline li a  { padding: 10px;  }
+        .list-inline:nth-child(3) li a {color: skyblue; border-right: 0.5px solid gray;padding: 5px;}
+        #navbar { display: flex;justify-content: space-between}
+        #navbar li { list-style: none;border:1px solid white; text-align: center; width: 100%; height: 100%;padding-top: 7px;padding-bottom: 7px; background-color: crimson; opacity: 0.6;color: aliceblue}
+        #navbar li:hover { opacity: 1 ; font-size: 18px;}
+        #main { display: flex}
+        #left { width:70%;border:1p solid red ; margin-right: 1em;padding-right:;
+  padding-left:;
+  /*margin-right: auto;
+  margin-left: auto;*/}
+        #right { width:28%;border:1p solid red ;  margin-right: }
+       
+        /* product */
+  #product{ display: flex}
+  #product img { width :50%; margin-right: 1rem;}
+  .title{background-color: floralwhite; color: grey;font-size: 20px}
+  .special { font-weight: 900; color: brown}
+  #span-block { display: inline-block; border:2px solid gray;padding:2px 5px;
+        margin: 2px 2px;background-color: darkkhaki;color: black}
+ #desc button { background-color: yellow; border: 1px solid gray;outline:; padding: 5px;margin-right: 5px;}
+        
+        #compare{ display: flex}
+        #compBlock{padding: 3px 10px 6px 10px;}
+        #compBlock button {cursor: pointer}
+        #compBlock button:hover {opacity: 0.8}
+        #bell:hover {opacity: 0.8;cursor: pointer}
+        .updateColor {background-color:#333333 ; color: whitesmoke}
+        
+         #footer table { width: 100%;}
+      #footer table td  {color: azure ;  text-align: center;padding: 8px; font-size:17px}
+      #footer .foot:hover { opacity: 0.5; cursor: pointer; text-decoration: underline; background-color: ; color: white} 
+        #footer .foot {margin: 0 10px 0 10px; border-right: 1px solid white;padding-right: 8px;border-radius: 10px}
+        
+        /*right */
+        #range { display: flex; background-color: ghostwhite}
+        #other-image{ display: flex}
+        #other-image img{width:32%;margin-right: 10px}
+        #other-image img:hover{width:35%;margin-right: 5px;opacity: 0.7}
+        
+        #card { border: 1px solid gray;}
+        #card-text { background-color:#333333 ;margin-top: 0; color:floralwhite;padding: 10px; width:;}
+        #o-product img { width: 80%}
+        #o-product{ text-align: center; width:45%}
+        #p-block{display: flex;}
+        #o-product p {margin: 10px}
+        #loader { width:0%; background-color:#ffd600;height: 3px; position: fixed ;top: 0;left: 0;z-index:100}
+        body {background-color: }
+        
+        /* range */
+        #plus:hover , #minus:hover { cursor: pointer}
+        
+        #logo {border: 1p solid gray; text-align: center ; font-size: 38px ; color: whitesmoke;text-shadow: 3px 3px blue;position:absolute; top:30%;left:20%}
+      #logo:hover {cursor: grabbing}
+    </style>
+</head>
+<body>
+<div id="loader"></div>
+    <br>
+<div id="header" class="container">
+  <div id="logopart" style="position:relative;"> 
+    <img src="pic/log.jfif" >
+     <span id="logo" style="flex-grow: 2">Zo Music</span>
+ </div> 
+  <div id="rightpart">
+    <span id="search-block">
+        <span id="search-icon"><svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+</span> <input type="search" id="search" placeholder="Search by group" > </span>
+    
+    <ul class="list-inline">
+      <li><a>Debut</a></li>
+      <li><a>Welcome</a></li>
+      <li><a>Message</a></li>
+    </ul>
+     <ul class="list-inline updateColor">
+      <li class="" >My Account</li>
+      <li>My Wallmat</li>
+      <li>My Map</li>
+      <li>Checkout</li>
+      <li>Login</li>
+    </ul>
+  </div>
+</div>
+<div id="navbar" class="container">
+    <li class="updateColor"><a>Home</a></li> 
+   <li class="updateColor"><a>Furnature</a>  </li>
+    <li class="updateColor"><a>Electronic</a>  </li>
+   <li class="updateColor"><a>Apparel</a> </li> 
+     <li class="updateColor"><a>Music</a>  </li>
+     <li class="updateColor"><a>E Book</a>  </li>
+</div>
+<div id="main" class="container">
+<div id="left">
+  <div id="product">
+    <!-- <div id="photo"> -->
+      <img src="pic/keane1.jpg">  
+   <!--  </div>  -->
+    <div id="desc">
+      <h3 class="title">Keane </h3>
+      <p> <a href="">Email to friend</a></p>
+      <p>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+          
+          <span id="start-icon"><svg height="16"viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+</span>
+    <a href="">Preview this product</a>
+    </p>
+    <p>Availability : <span>In Stock</span></p>
+    <p>Regular Price : 1209.99 FCFA</p>
+    <p class="special">Special Price : <span>1000 FCFA</span></p>
+    <p>Quantity <span id="span-block">1</span> <button>Add To chart</button> <span> OR </span> 
+        <span style="display: inline-block;  margin-left: 10px;">
+         <a style="display: block" href="">Add to Wallet</a>
+         <a style="display: block"  href="">Add to Compare</a>
+        </span> </p>
+        <p> <a href="" > Product Information </a></p>
+    </div>
+  </div>  
+  <div id="productDetail">
+    <h3 class="special"> Product Details</h3>
+    <p>To start the app we need the current list of talks. Since the initial load is closely
+related to the long polling process—the ETag from the load must be used when
+polling—we’ll write a function that keeps polling the server for /talks and calls
+a callback function when a new set of talks is available.</p>
+  </div>
+ <div id=video>
+      <video width="100%" height="200px" controls autoplay>
+        <source src="pic/KEANE-BeadShaped.mp4" >  
+      </video>
+    </div>
+    <br>
+  <div id="compare">
+      <div class="updateColor" id="compBlock" style="margin-right: 2rem;width:31%">
+       <p style="color:gainsboro;font-size:20px;margin-top: 0px;padding-top:5px">Compare Products</p>
+       <p style="margin-bottom:0.5px;padding-bottom:0.5px;opacity: 0.5">Sony Digital Camera</p>
+       <p style="margin-top:0.5px;padding-top:0.5px;opacity: 0.7">Samsumg Digital Camera</p>
+       <div style="display: flex; justify-content: space-between"> <span id="bell"style="color:gainsboro;font-size: 13px;">Notification<svg  style="margin-left: 4px" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
+</span><span> <button style="outline: none;background-color: darkgoldenrod;border:none;padding: 5px;color: azure;border-radius: 4px">Compare</button></span></div>
+   </div> 
+      
+        <div class="updateColor" id="compBlock" style="margin-right: 2rem;width:31%">
+       <p style="color:gainsboro;font-size:20px;margin-top: 0px;padding-top:5px">My Cart</p>
+       <p style="margin-bottom:2.5px;padding-bottom:0.5px;opacity: 0.7">There is one item in your shopping cart</p>
+       
+       <div style="display: flex; justify-content: space-between"> <span id="bell"style="color:gainsboro;font-size: 13px;">Notification<svg  style="margin-left: 4px" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
+</span><span> <button style="outline: none;background-color:darkslategrey;border:none;padding: 5px;color: azure;border-radius: 4px">CheckOut</button></span></div>
+   </div>
+      
+       <div class="updateColor" id="compBlock" style="margin-right: 2rem;width:31%">
+       <p style="color:gainsboro;font-size:20px;margin-top: 0px;padding-top:5px">Your Shop Pool</p>
+       <p style="margin-bottom:2.5px;padding-bottom:0.5px;opacity: 0.7">How great is Magneto ? </p>
+       
+       <div style="display: flex; justify-content: space-between;flex-direction: column">
+           <span><input type="checkbox">Great</span>
+           <span><input type="checkbox">Amazing</span>
+           <span><input type="checkbox">My shops success</span>
+           <span><input type="checkbox">Wow</span>
+       </div>
+   </div>
+  </div>
+ <div id="additional">
+     <h3 class="special">Additional Informations</h3>
+   <p>eating a "newComment" action.
+When creating moderately complex pieces of DOM, this style of programming starts to look rather messy. There’s a widely used (non-standard) JavaScript
+extension called JSX that lets you write HTML directly in your scripts, which
+can make such code prettier (depending on what you consider pretty). Before
+you can actually run such code, you have to run a program on your script to
+convert the pseudo-HTML into JavaScript function calls much like the ones we</p> 
+ </div>
+</div>
+<div id="right">
+    <div id="block1">
+      <div id="range">
+          <span id="minus" style="display: inline-block;padding: 0px 10px;font-size:26px;font-weight: 1000;background-color:#d50000;border-radius: 6px; color: white">-</span><input id="rangeBar" type="range" style="flex-grow:2;"> <span id="plus" style="display: inline-block;padding: 0px 10px;font-size:26px;font-weight: 1000;background-color:#99ff33;border-radius: 6px; color: white">+</span>
+      </div>
+        <br>
+         <h3>Others Pictures</h3>
+        <div id="other-image">
+           
+         <img src="pic/KEANE12.jfif">
+            <img src="pic/keane5.jfif" >
+            <img src="pic/keane36.jfif">
+        </div>
+    </div>
+    <br>
+     <div id="card">
+      <p id="card-text">You May Be Interested also in ...</p>
+     <div id="p-block">
+     <div id="o-product">
+        <span style="display: inline-block; width:100%"><img src="pic/mulla.jfif"></span>
+         <p class="p-name">MULLA - Le Paradis sur terre</p>
+         <p class="p-price"> 2500 FCFA</p>
+         <span> <button>Add to chart</button></span>
+         <p><a href="">Vote here</a></p>
+         <p><a href="">View more</a></p>
+      </div>
+     <div id="o-product">
+        <span style="display: inline-block; width:100%"><img src="pic/coldplaymus.jfif"></span>
+         <p class="p-name">COLDPLAY - Parachute</p>
+         <p class="p-price"> 2500 FCFA</p>
+         <span> <button>Add to chart</button></span>
+         <p><a href="">Vote here</a></p>
+         <p><a href="">View more</a></p>
+      </div>
+         
+     </div>
+         <br>
+        <div id="p-block">
+     <div id="o-product">
+        <span style="display: inline-block; width:100%"><img src="pic/system5.jfif"></span>
+         <p class="p-name">SYSTEM A DOWN - Lonely Day</p>
+         <p class="p-price"> 2500 FCFA</p>
+         <span> <button>Add to chart</button></span>
+         <p><a href="">Vote here</a></p>
+         <p><a href="">View more</a></p>
+      </div>
+     <div id="o-product">
+        <span style="display: inline-block; width:100%"><img src="pic/johnny.jfif"></span>
+         <p class="p-name">JOHNNY HALLYDAY -Le Penitentier</p>
+         <p class="p-price"> 2500 FCFA</p>
+         <span> <button>Add to chart</button></span>
+         <p><a href="">Vote here</a></p>
+         <p><a href="">View more</a></p>
+      </div>
+         
+     </div>
+    </div>
+    <div id="block4"></div>
+</div>
+  
+</div>
+<div id="footer" class="container updateColor">
+    <table>
+          <tr>
+            <td><span class="foot">Abouts Us </span><span class="foot">Customer Sevice</span> <span class="foot">Subscribe to RSS</span></td>
+          </tr>
+          <tr>
+              <td><span class="foot">Site Map</span><span class="foot">Search Terms</span><span class="foot">Advanced Search</span><span class="foot">Orders &amp; Return </span><span class="foot">Help</span><span class="foot">Contact Us</span></td>
+          </tr>
+         
+        <tr>
+            <td>Reseau sociaux</td>  
+
+          </tr>
+        <tr>
+            <td><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img" focusable="false" width=50><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
+</td>  
+
+          </tr>
+            
+            
+            <tr>
+            <td><svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+</td>  
+
+          </tr>
+        <tr>
+            <td>Powered By :  Mr Gneto Tiero Dominique Martial</td>  
+
+          </tr>
+        <tr>
+            <td>Copyright under GNU/ MIT Licence 2020</td>  
+
+          </tr>
+        </table>
+</div>
+ <script>
+    let search  = document.getElementById("search");
+     search.addEventListener("focus", e=>{
+         e.target.style.backgroundColor="white";
+     })
+    
+     search.addEventListener("blur", e=>{
+         e.target.style.backgroundColor="rgba(192,192,192,0.2)";
+     })
+     let loader = document.getElementById("loader");
+     let offSetLeft ; 
+     
+     window.addEventListener("scroll", event=>{
+         offSetLeft = document.body.offsetHeight - document.body.clientHeight;
+         loader.style.width = `${(pageYOffset / offSetLeft) * 100}%`;
+     })
+     
+     /* range */
+     let rangeBar =  document.getElementById("rangeBar"); 
+     let minus =  document.getElementById("minus"); 
+     let plus =  document.getElementById("plus"); 
+     console.log(rangeBar.value)
+     
+     rangeBar.addEventListener("change",event=>{
+         console.log(event)
+     });
+     minus.addEventListener("click",event=>{
+         rangeBar.stepDown();
+     })
+     
+      plus.addEventListener("click",event=>{
+         rangeBar.stepUp();
+     })
+ </script>
+    
+</body>
+</html>
