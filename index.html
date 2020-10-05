@@ -1,21 +1,34 @@
 <html>
 <head>
     <style>
-        div {border:1p solid red ;}
+        div {
+            border:1p solid red ;
+        }
         #header {
             display: flex;
-            justify-content: space-between;background-color: ;
+            justify-content: space-between;
+            background-color: ;
         }
-        .container { width: 80%;
- padding-right: 15px;
-  padding-left: 15px;
- margin-right: auto;
-  margin-left: auto;}
+        .container { 
+            width: 80%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
         .list-inline{ margin-bottom: 20px; }
         .list-inline li{ display: inline-block;padding: 10px;}
         .list-inline li:hover {opacity: 0.6;cursor: pointer}
         #rightpart {text-align: right}
-        #search { border-radius: 10px;padding-left: 30px;background-color: rgba(192,192,192,0.2); outline: none; width:190px; height:30px; color: ;}
+        #search {
+            border-radius: 10px;
+            padding-left: 30px;
+            background-color: rgba(192,192,192,0.2); 
+            outline: none; 
+            width:190px;
+            height:30px; 
+            color: ;
+        }
         #search-block { position: relative;}
         #search-icon { position: absolute; left: 6px;top:2px}
         .list-inline:nth-child(2) li a {
@@ -48,7 +61,7 @@
         #productName {
             display: block;
             width: 85%;
-            background-image: url(pic/keane1.jpg);
+            background-image: url(pic/garba.jpg);
             background-size:cover;
             height: 200px;
             background-repeat: no-repeat;
@@ -104,17 +117,18 @@
       #footer .foot:hover { opacity: 0.5; cursor: pointer; text-decoration: underline; background-color: ; color: white} 
         #footer .foot {margin: 0 10px 0 10px; border-right: 1px solid white;padding-right: 8px;border-radius: 10px}
         
-        #logo {border: 1p solid gray; text-align: center ; font-size: 38px ; color: whitesmoke;text-shadow: 3px 3px blue;position:absolute; top:30%;left:20%}
+           #logo {border: 1p solid gray; text-align: center ; font-size: 38px ; color: whitesmoke;text-shadow: 3px 3px blue;position:absolute; top:30%;left:20%}
       #logo:hover {cursor: grabbing}
+        #icon1{ height: calc(12vh); flex-wrap: wrap}
     </style>
 </head>
 <body>
 <div id="loader"></div>
     <br>
 <div id="header" class="container">
-  <div id="logopart" style="position:relative;">
+  <div id="logopart" style="position:relative;" class="updateColor">
     <img src="pic/log.jfif">
-      <span id="logo" style="flex-grow: 2">Zo Music</span>
+       <span id="logo" style="flex-grow: 2">Zo Music</span>
   </div>
   <div id="rightpart">
     <span id="search-block">
@@ -146,10 +160,10 @@
 <div id="main" class="container">
  <div id="left">
   <div style="margin:0 0.6rem 0 0.6rem ;width:110%">
-  <a  href="jpe1oct_gneto_page2.html" id="productName" target="_blank">
+  <a  href="jpe2oct_gneto_page2.html" id="productName" target="_blank">
    
   </a>
-  <p>Please click on this image</p>
+    <!--  <p id="nextpage" style="background-color:#0091ea;width:85%;border-radius:5px;color:white"> NEXT PAGE CLICK THIS IMAGE</p> -->
   <div id="paletteBlock" style="border:1p solid red">
     <div id="illustrator">
         <div id="triangle"></div>
@@ -175,7 +189,7 @@
         <div class="paletteColor" data-code="ffffff" style="background-color:#ffffff;width:20px;height:20px;border: 1px solid gray"></div>
     
     </div>
-    <p> Select here your favorite Background color</p>
+       <p> Select here your favorite Background color</p>
        <hr class="updateColor"; style="border:1px solid gray">  
   </div>
   </div>
@@ -189,16 +203,16 @@
 
      <div id="sliderImgContainer">
          <div id="indicator-group"><span class="indicatorItems"></span><span class="indicatorItems"></span><span class="indicatorItems"></span></div>
-         <a href=""><img id="imgSlider"></a>
+         <a href="jpe2oct_gneto_page2.html" id="dest" data-source="" target="_blank"><img id="imgSlider"></a>
      </div>
      
      <p id="sliderText" style="opacity: 1"></p>
     <h2 class="updateColor">Best Selling Products</h2>
      <div id="best-seller">
       <div class="best-each bestEach" style="border:1p solid red">
-         <div class="best-img" style="border:1p solid red"> <img src="pic/rem.png"></div>
+         <div class="best-img" style="border:1p solid red"> <img src="pic/keane1.jpg"></div>
           <div class="best-text-block">
-              <p>Brand New keane Album</p>
+              <p>R.E.M </p>
               <div style="text-align: center"><svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" classes="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="26" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
 
 </div>
@@ -206,34 +220,9 @@
       </div>
          
          <div class="best-each bestEach" style="border:1p solid red">
-         <div class="best-img" style="border:1p solid red"> <img src="pic/james2.jfif"></div>
+         <div class="best-img" style="border:1p solid red"> <img src="pic/keane1.jpg"></div>
           <div class="best-text-block">
-              <p>Brand New keane Album</p>
-              <div style="text-align: center"><svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" classes="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="26" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
-
-</div>
-          </div>
-      </div>
-      
-      
-     </div>
-     
-       <br>
-      <div id="best-seller">
-      <div class="best-each bestEach" style="border:1p solid red">
-         <div class="best-img" style="border:1p solid red"> <img src="pic/kaaris.jfif"></div>
-          <div class="best-text-block">
-              <p>Brand New keane Album</p>
-              <div style="text-align: center"><svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" classes="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="26" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
-
-</div>
-          </div>
-      </div>
-         
-         <div class="best-each bestEach" style="border:1p solid red">
-         <div class="best-img" style="border:1p solid red"> <img src="pic/afro.jfif"></div>
-          <div class="best-text-block">
-              <p>Brand New keane Album</p>
+              <p>JAMES BLUNT </p>
               <div style="text-align: center"><svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" classes="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="26" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
 
 </div>
@@ -241,6 +230,41 @@
       </div>
        
       </div>
+     
+     <br>
+      <div id="best-seller">
+      <div class="best-each bestEach" style="border:1p solid red">
+         <div class="best-img" style="border:1p solid red"> <img src="pic/keane1.jpg"></div>
+          <div class="best-text-block">
+              <p>KAARIS</p>
+              <div style="text-align: center"><svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" classes="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="26" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
+
+</div>
+          </div>
+      </div>
+        
+         <div class="best-each bestEach" style="border:1p solid red">
+         <div class="best-img" style="border:1p solid red"> <img src="pic/keane1.jpg"></div>
+          <div class="best-text-block">
+              <p>AFRO B</p>
+              <div style="text-align: center"><svg height="16" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" classes="UnderlineNav-octicon" display="none inline" viewBox="0 0 16 16" version="1.1" width="26" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
+
+</div>
+          </div>
+      </div>
+       
+      </div>
+     
+     
+     <hr>
+     <!---<br>
+     <div id="icon1" style="height:; display: flex;justify-content: space-between">
+         <span><img src="pic/coldplaymus.jfif" style="height: 80%"></span>
+          <span> <img src="pic/coldplaymus.jfif" style="height: 80%"></span>
+          <span> <img src="pic/coldplaymus.jfif" style="height: 80%"></span>
+          <span><img src="pic/coldplaymus.jfif" style="height: 80%"></span>
+     </div> -->
+     
  </div>
     
  <div id="right">
@@ -276,6 +300,10 @@
            <span><input type="checkbox">Wow</span>
        </div>
    </div>
+     <br>
+     <div id="monlogo" style="height: 50px; text-align: center;padding-top: 4px;padding-bottom: 4px" class="updateColor">
+        <img src="pic/log.jfif" width="30%" style="border-radius: 50%">
+     </div>
  </div>
 
 </div>
@@ -294,15 +322,13 @@
 
           </tr>
         <tr>
-            <td><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img" focusable="false" width=50><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
-</td>  
+            <td><svg xmlns="http://www.w3.org/2000/svg" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img" focusable="false" width=50><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg></td>  
 
           </tr>
             
             
             <tr>
-            <td><svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-</td>  
+            <td><svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></td>  
 
           </tr>
         <tr>
@@ -316,6 +342,8 @@
         </table>
     </div>
  <script>
+     
+   
     let search  = document.getElementById("search");
      search.addEventListener("focus", e=>{
          e.target.style.backgroundColor="white";
@@ -326,7 +354,7 @@
      })
      
      // image slider
-     let images = ["pic/killer1.jfif","pic/rem.png","pic/nick.jfif"] ;
+     let images = ["pic/boy.jfif","pic/go.jfif","pic/small boy.jfif"] ;
      let imgSlider = document.getElementById("imgSlider");
      let indicator=  document.getElementsByClassName("indicatorItems");
      let sliderImgContainer = document.getElementById("sliderImgContainer");
@@ -335,16 +363,22 @@
      let triangle = document.getElementById("triangle");
      let icolor = document.getElementById("icode");
      let updateColor=  document.getElementsByClassName("updateColor");
-     let bestEach=  document.getElementsByClassName("bestEach");
+     let bestEach=  document.getElementsByClassName("bestEach"); 
+     let nextpage= document.getElementById("nextpage");
+	 let dest= document.getElementById("dest");
      let codecolor ;
+     
+	 
+		 
      function slider(image){
          
          let imgLength = image.length;
          let indice = 0 ;
-         let info =[" everything is working soconsole terminat:","Bootstrap has a nice feature for button bo","The next screenshot represents our nle"]
+         let info =["everything is working soconsole terminat:","Bootstrap has a nice feature for button bo","33The next screenshot represents our nle"]
          
          sliderText.innerHTML=info[imgLength-1];
          imgSlider.src=images[imgLength-1];
+		 sessionStorage.setItem("source",images[imgLength-1])
          //indicator[imgLength-1].style.opacity=1
          setInterval(function(){
              sliderImgContainer.style.opacity=0.8;
@@ -353,9 +387,13 @@
                 sliderImgContainer.style.opacity=1;
                 indicator[indice].style.opacity=1;
                  sliderText.innerHTML=info[indice]
+                 nextpage.style.opacity=0.7
            },500)
-           imgSlider.src=images[indice]
+           imgSlider.src=images[indice] ;
+		   //dest.setAttribute("data-source",images[indice])
+		   sessionStorage.setItem("source",images[indice])
            indicator[indice].style.opacity=.3;
+            nextpage.style.opacity=1
            indice++;
            if(indice > imgLength-1) { indice=0}
            
