@@ -22,7 +22,7 @@
             background-color:ghostwhite; cursor: pointer ;opacity: 0.7
         }
         .list-inline:nth-child(2) li a:hover {
-           opacity: 1 ; background-color: rgba(192,192,192,0.2) ; color: whit
+           opacity: 1 ; background-color: rgba(192,192,192,0.2) ; color: whi
         }
         .list-inline li a  { padding: 10px;  }
         .list-inline:nth-child(3) li a {color: skyblue; border-right: 0.5px solid gray;padding: 5px;}
@@ -69,24 +69,65 @@
         #o-product{ text-align: center; width:45%}
         #p-block{display: flex;}
         #o-product p {margin: 10px}
-        #loader { width:0%; background-color:#ffd600;height: 3px; position: fixed ;top: 0;left: 0;z-index:100}
+        #loader { width:0%; background-color:#ffd600;height: 3px; position: fixed ;top: 0;left: 0;z-index:100; }
         body {background-color: }
         
         /* range */
         #plus:hover , #minus:hover { cursor: pointer}
         
+        #banner {  position:fixed;width: 100%;height: 100%; background-color: rgba(0,0,0,0.6);z-index: 1000; display: none;top:1px}
+        #singer { width:60%; background-color: cornsilk; margin: 10% 20%}
+        #close { width: 40px ; height: 20px; background-color: white; text-align: center;margin: 15px;padding: 4px;border-radius: 5px}
+        #close:hover { cursor: pointer; opacity: 0.8;}
         #logo {border: 1p solid gray; text-align: center ; font-size: 38px ; color: whitesmoke;text-shadow: 3px 3px blue;position:absolute; top:30%;left:20%}
       #logo:hover {cursor: grabbing}
+        .goinside:hover{ opacity: 0.8;cursor: pointer}
     </style>
 </head>
 <body>
+    <div id="banner">
+    <p id="close"> close </p>
+        <div id="singer">
+        
+          <div id="product">
+    <!-- <div id="photo"> -->
+      <img src="" id="selectedArtist">  
+   <!--  </div>  -->
+    <div id="desc">
+      <h3 class="title" id="selectTitle">Chair</h3>
+      <p> <a href="">Email to friend</a></p>
+      <p>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+           <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+          
+          <span id="start-icon"><svg height="16"viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+</span>
+    <a href="">Preview this product</a>
+    </p>
+    <p>Availability : <span>In Stock</span></p>
+    <p>Regular Price : 1209.99 FCFA</p>
+    <p class="special">Special Price : <span id="spec">1000 FCFA</span></p>
+    <p>Quantity <span id="span-block">1</span> <button>Add To chart</button> <span> OR </span> 
+        <span style="display: inline-block;  margin-left: 10px;">
+         <a style="display: block" href="">Add to Wallet</a>
+         <a style="display: block"  href="">Add to Compare</a>
+        </span> </p>
+        <p> <a href="" > Product Information </a></p>
+    </div>
+  </div>
+            </div>
+    </div>   
+    
+    
 <div id="loader"></div>
     <br>
 <div id="header" class="container">
-  <div id="logopart" style="position:relative;"> 
-    <img src="pic/log.jfif" >
-     <span id="logo" style="flex-grow: 2">Zo Music</span>
- </div> 
+  <div id="logopart" style="position:relative;" class="updateColor">
+    <img src="pic/log.jfif">
+       <span id="logo" style="flex-grow: 2">Zo Music</span>
+  </div>
   <div id="rightpart">
     <span id="search-block">
         <span id="search-icon"><svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
@@ -118,10 +159,10 @@
 <div id="left">
   <div id="product">
     <!-- <div id="photo"> -->
-      <img src="pic/keane1.jpg">  
+      <img src="pic/keane1.jpg"  id="imgrecieve">  
    <!--  </div>  -->
     <div id="desc">
-      <h3 class="title">Keane </h3>
+      <h3 class="title">Keane</h3>
       <p> <a href="">Email to friend</a></p>
       <p>
            <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
@@ -145,7 +186,7 @@
     </div>
   </div>  
   <div id="productDetail">
-    <h3 class="special"> Product Details</h3>
+    <h3 class="special"> Album Details</h3>
     <p>To start the app we need the current list of talks. Since the initial load is closely
 related to the long polling process—the ETag from the load must be used when
 polling—we’ll write a function that keeps polling the server for /talks and calls
@@ -153,7 +194,7 @@ a callback function when a new set of talks is available.</p>
   </div>
  <div id=video>
       <video width="100%" height="200px" controls autoplay>
-        <source src="pic/KEANE-BeadShaped.mp4" >  
+        <source src="pic/guyzo%20%20et%20les%20patrons.MP4" >  
       </video>
     </div>
     <br>
@@ -205,27 +246,27 @@ convert the pseudo-HTML into JavaScript function calls much like the ones we</p>
          <h3>Others Pictures</h3>
         <div id="other-image">
            
-         <img src="pic/KEANE12.jfif">
-            <img src="pic/keane5.jfif" >
-            <img src="pic/keane36.jfif">
+         <img src="pic/coldplay.jpg">
+            <img src="pic/colplay2.jpg" >
+            <img src="pic/coldplay.jpg">
         </div>
     </div>
     <br>
      <div id="card">
-      <p id="card-text">You May Be Interested also in ...</p>
+      <p id="card-text" style="text-align:center">You May Be Interested also in. <BR> So click down on each Image </p>
      <div id="p-block">
      <div id="o-product">
-        <span style="display: inline-block; width:100%"><img src="pic/mulla.jfif"></span>
-         <p class="p-name">MULLA - Le Paradis sur terre</p>
-         <p class="p-price"> 2500 FCFA</p>
+        <span style="display: inline-block; width:100%"><img src="pic/node.jpg" class="goinside" data-artist="Mulla" data-price="4500" title="click here to see more..."></span>
+         <p class="p-name">MULLA</p>
+         <p class="p-price"> 4500 FCFA</p>
          <span> <button>Add to chart</button></span>
          <p><a href="">Vote here</a></p>
          <p><a href="">View more</a></p>
       </div>
      <div id="o-product">
-        <span style="display: inline-block; width:100%"><img src="pic/coldplaymus.jfif"></span>
-         <p class="p-name">COLDPLAY - Parachute</p>
-         <p class="p-price"> 2500 FCFA</p>
+        <span style="display: inline-block; width:100%"><img src="pic/node.jpg" class="goinside" data-artist="ColdPlay" data-price="3500" title="click here to see more..."></span>
+         <p class="p-name">COLDPLAY</p>
+         <p class="p-price"> 3500 FCFA</p>
          <span> <button>Add to chart</button></span>
          <p><a href="">Vote here</a></p>
          <p><a href="">View more</a></p>
@@ -235,17 +276,17 @@ convert the pseudo-HTML into JavaScript function calls much like the ones we</p>
          <br>
         <div id="p-block">
      <div id="o-product">
-        <span style="display: inline-block; width:100%"><img src="pic/system5.jfif"></span>
-         <p class="p-name">SYSTEM A DOWN - Lonely Day</p>
-         <p class="p-price"> 2500 FCFA</p>
+        <span style="display: inline-block; width:100%"><img src="pic/node.jpg" class="goinside" data-artist="System of A down" data-price="2000" title="click here to see more..."></span>
+         <p class="p-name">SYSTEM OF A DOWN</p>
+         <p class="p-price"> 2000 FCFA</p>
          <span> <button>Add to chart</button></span>
          <p><a href="">Vote here</a></p>
          <p><a href="">View more</a></p>
       </div>
      <div id="o-product">
-        <span style="display: inline-block; width:100%"><img src="pic/johnny.jfif"></span>
-         <p class="p-name">JOHNNY HALLYDAY -Le Penitentier</p>
-         <p class="p-price"> 2500 FCFA</p>
+        <span style="display: inline-block; width:100%"><img src="pic/node.jpg" class="goinside" data-artist="Johnny Hallyday" data-price="1600" title="click here to see more..."></span>
+         <p class="p-name">JHONNY HALLYDAY</p>
+         <p class="p-price"> 1600 FCFA</p>
          <span> <button>Add to chart</button></span>
          <p><a href="">Vote here</a></p>
          <p><a href="">View more</a></p>
@@ -253,10 +294,14 @@ convert the pseudo-HTML into JavaScript function calls much like the ones we</p>
          
      </div>
     </div>
-    <div id="block4"></div>
+    <br>
+     <div id="monlogo" style="height: 160px; text-align: center;padding-top: 4px;padding-bottom: 4px" class="updateColor">
+        <img src="pic/log.jfif" width="60%" style="border-radius: 50%">
+     </div>
 </div>
   
 </div>
+   
 <div id="footer" class="container updateColor">
     <table>
           <tr>
@@ -292,8 +337,17 @@ convert the pseudo-HTML into JavaScript function calls much like the ones we</p>
           </tr>
         </table>
 </div>
+  
  <script>
     let search  = document.getElementById("search");
+	let imgrecieve  = document.getElementById("imgrecieve");
+	
+	if(  sessionStorage.getItem("source") == false  ){
+		imgrecieve.setAttribute("src","pic/keane1.jpg")
+	}else{
+		imgrecieve.setAttribute("src",sessionStorage.getItem("source"))
+	}
+	
      search.addEventListener("focus", e=>{
          e.target.style.backgroundColor="white";
      })
@@ -313,7 +367,7 @@ convert the pseudo-HTML into JavaScript function calls much like the ones we</p>
      let rangeBar =  document.getElementById("rangeBar"); 
      let minus =  document.getElementById("minus"); 
      let plus =  document.getElementById("plus"); 
-     console.log(rangeBar.value)
+     //console.log(rangeBar.value)
      
      rangeBar.addEventListener("change",event=>{
          console.log(event)
@@ -325,6 +379,29 @@ convert the pseudo-HTML into JavaScript function calls much like the ones we</p>
       plus.addEventListener("click",event=>{
          rangeBar.stepUp();
      })
+     
+     console.log(sessionStorage.getItem("source"))
+     //
+     let goinside  = document.getElementsByClassName("goinside");
+     let banner = document.getElementById("banner");
+      let close = document.getElementById("close");
+     let selectedArtist = document.getElementById("selectedArtist"); 
+     let selectTitle = document.getElementById("selectTitle");
+     let spec = document.getElementById("spec");
+        Array.prototype.map.call(goinside, function(elt, ind){
+         //console.log(elt)
+          elt.addEventListener("click",event=>{
+             banner.style.display="block";
+              selectedArtist.src=elt.src
+              selectTitle.innerHTML= elt.getAttribute('data-artist');
+              spec.innerHTML= elt.getAttribute('data-price') +" FCFA";
+          })
+        });
+     
+      close.addEventListener("click",event=>{
+             banner.style.display="none";
+          });
+		
  </script>
     
 </body>
